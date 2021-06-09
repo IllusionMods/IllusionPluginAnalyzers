@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuDarknessCompatibilityAnalyzer", "KoikatuDarknessCompatibilityAnalyzer\KoikatuDarknessCompatibilityAnalyzer\KoikatuDarknessCompatibilityAnalyzer.csproj", "{94D3C5F3-C2A8-4C46-935C-2A9A66D4EC54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuCompatibilityAnalyzer", "KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.csproj", "{94D3C5F3-C2A8-4C46-935C-2A9A66D4EC54}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuDarknessCompatibilityAnalyzer.CodeFixes", "KoikatuDarknessCompatibilityAnalyzer\KoikatuDarknessCompatibilityAnalyzer.CodeFixes\KoikatuDarknessCompatibilityAnalyzer.CodeFixes.csproj", "{AD5CCB2D-6874-4867-B22F-32D79E22137E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuCompatibilityAnalyzer.CodeFixes", "KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.CodeFixes\KoikatuCompatibilityAnalyzer.CodeFixes.csproj", "{AD5CCB2D-6874-4867-B22F-32D79E22137E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoikatuDarknessCompatibilityAnalyzer.Package", "KoikatuDarknessCompatibilityAnalyzer\KoikatuDarknessCompatibilityAnalyzer.Package\KoikatuDarknessCompatibilityAnalyzer.Package.csproj", "{67E38785-3744-4C33-A67F-7F5600FF4B72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoikatuCompatibilityAnalyzer.Package", "KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.Package\KoikatuCompatibilityAnalyzer.Package.csproj", "{67E38785-3744-4C33-A67F-7F5600FF4B72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuDarknessCompatibilityAnalyzer.Test", "KoikatuDarknessCompatibilityAnalyzer\KoikatuDarknessCompatibilityAnalyzer.Test\KoikatuDarknessCompatibilityAnalyzer.Test.csproj", "{212DB2E8-61F8-44A7-8E72-FEB1A5FBD133}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuCompatibilityAnalyzer.Test", "KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.Test\KoikatuCompatibilityAnalyzer.Test.csproj", "{212DB2E8-61F8-44A7-8E72-FEB1A5FBD133}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuDarknessCompatibilityAnalyzer.Vsix", "KoikatuDarknessCompatibilityAnalyzer\KoikatuDarknessCompatibilityAnalyzer.Vsix\KoikatuDarknessCompatibilityAnalyzer.Vsix.csproj", "{72448C66-6EDA-4213-A8DB-B716753F8E11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoikatuCompatibilityAnalyzer.Vsix", "KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.Vsix\KoikatuCompatibilityAnalyzer.Vsix.csproj", "{72448C66-6EDA-4213-A8DB-B716753F8E11}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiAssemblyComparer", "KoikatuDarknessCompatibilityAnalyzer\KoiAssemblyComparer\KoiAssemblyComparer.csproj", "{BBF3C265-653A-43B3-A62C-EC43CB903DED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoiAssemblyComparer", "KoikatuCompatibilityAnalyzer\KoiAssemblyComparer\KoiAssemblyComparer.csproj", "{BBF3C265-653A-43B3-A62C-EC43CB903DED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KoikatuCompatibility", "KoikatuCompatibility", "{FB2B229A-9082-460D-8BF6-FFA8FC66AE56}"
 EndProject
