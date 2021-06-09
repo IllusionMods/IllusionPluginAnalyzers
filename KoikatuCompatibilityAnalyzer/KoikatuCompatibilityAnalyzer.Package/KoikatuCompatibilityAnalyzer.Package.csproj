@@ -10,21 +10,22 @@
 
   <PropertyGroup>
     <PackageId>KoikatuCompatibilityAnalyzer</PackageId>
-    <PackageVersion>1.0.0.0</PackageVersion>
-    <Authors>KLOC</Authors>
-    <PackageLicenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</PackageLicenseUrl>
-    <PackageProjectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</PackageProjectUrl>
-    <PackageIconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</PackageIconUrl>
-    <RepositoryUrl>http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE</RepositoryUrl>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>IllusionLibs</Authors>
+    <RepositoryUrl>https://github.com/IllusionMods/IllusionPluginAnalyzers</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>KoikatuCompatibilityAnalyzer</Description>
-    <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
-    <Copyright>Copyright</Copyright>
+    <Description>Warns about using types and members that don't exist in some game versions</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright>Copyright 2021</Copyright>
     <PackageTags>KoikatuCompatibilityAnalyzer, analyzers</PackageTags>
     <DevelopmentDependency>true</DevelopmentDependency>
     <NoPackageAnalysis>true</NoPackageAnalysis>
 
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
+
+    <Version>1.0.1</Version>
+
+    <Product>KoikatuCompatibilityAnalyzer</Product>
   </PropertyGroup>
 
   <ItemGroup>
