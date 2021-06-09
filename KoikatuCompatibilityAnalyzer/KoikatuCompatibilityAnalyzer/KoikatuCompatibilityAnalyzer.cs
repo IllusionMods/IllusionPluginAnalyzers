@@ -12,6 +12,8 @@ namespace KoikatuCompatibilityAnalyzer
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class KoikatuCompatibilityAnalyzer : DiagnosticAnalyzer
     {
+        public const string Version = "1.0";
+
         #region Defines
 
         private const string Description = "To maintain compatibility with other game versions you should access it by reflection (Traverse, AccessTools) and handle the case where the member doesn't exist. Trying to access members that don't exist or have a different signature will throw an exception and in some cases might even crash the game.";

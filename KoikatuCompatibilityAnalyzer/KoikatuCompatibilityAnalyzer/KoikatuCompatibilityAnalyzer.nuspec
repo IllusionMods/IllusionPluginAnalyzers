@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>KoikatuCompatibilityAnalyzer</id>
+    <version>$version$</version>
+    <authors>IllusionMods</authors>
+    <projectUrl>https://github.com/IllusionMods/IllusionPluginAnalyzers</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Checks if code is using members that are not available in some game versions</description>
+    <developmentDependency>true</developmentDependency>
+    <tags>Koikatsu</tags>
+  </metadata>
+  <!--<files>
+    <file src="..\install.ps1" target="tools"/>
+  </files>-->
+</package>

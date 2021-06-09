@@ -5,7 +5,7 @@
 
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
-    <Platforms>AnyCPU</Platforms>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KoikatuCompatibilityAnalyzer.CodeFixes\KoikatuCompatibilityAnalyzer.CodeFixes.csproj" />
     <ProjectReference Include="..\KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.csproj" />
   </ItemGroup>
 
