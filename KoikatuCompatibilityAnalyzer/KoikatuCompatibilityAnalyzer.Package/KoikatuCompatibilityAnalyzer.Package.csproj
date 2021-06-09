@@ -28,7 +28,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KoikatuCompatibilityAnalyzer.CodeFixes\KoikatuCompatibilityAnalyzer.CodeFixes.csproj" />
     <ProjectReference Include="..\KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.csproj" />
   </ItemGroup>
 
@@ -39,7 +38,6 @@
   <Target Name="_AddAnalyzersToOutput">
     <ItemGroup>
       <TfmSpecificPackageFile Include="$(OutputPath)\KoikatuCompatibilityAnalyzer.dll" PackagePath="analyzers/dotnet/cs" />
-      <TfmSpecificPackageFile Include="$(OutputPath)\KoikatuCompatibilityAnalyzer.CodeFixes.dll" PackagePath="analyzers/dotnet/cs" />
     </ItemGroup>
   </Target>
 

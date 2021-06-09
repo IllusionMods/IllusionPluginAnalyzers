@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KoikatuCompatibilityAnalyzer.CodeFixes\KoikatuCompatibilityAnalyzer.CodeFixes.csproj" />
     <ProjectReference Include="..\KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.csproj" />
   </ItemGroup>
 

@@ -42,7 +42,6 @@
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="Exists('$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets')" />
 
   <ItemGroup>
-    <ProjectReference Include="..\KoikatuCompatibilityAnalyzer.CodeFixes\KoikatuCompatibilityAnalyzer.CodeFixes.csproj" />
     <ProjectReference Include="..\KoikatuCompatibilityAnalyzer\KoikatuCompatibilityAnalyzer.csproj" />
   </ItemGroup>
 
