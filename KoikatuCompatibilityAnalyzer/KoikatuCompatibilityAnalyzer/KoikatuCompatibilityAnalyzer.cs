@@ -33,14 +33,20 @@ namespace KoikatuCompatibilityAnalyzer
             "Type is missing in KK Party.",
             "Type {0} is missing in KK Party.",
             Category, DiagnosticSeverity.Warning, true, Description);
+        private static readonly DiagnosticDescriptor _ruleVrUnusedTypes = new DiagnosticDescriptor("KKANAL05",
+            "Type is not used in the VR DLC.",
+            "Type {0} is not used in the VR DLC.",
+            Category, DiagnosticSeverity.Warning, true, Description);
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
-            ImmutableArray.Create(_ruleAsMissingMembers, _ruleAsMissingTypes, _ruleKkpMissingMembers, _ruleKkpMissingTypes);
+            ImmutableArray.Create(_ruleAsMissingMembers, _ruleAsMissingTypes, _ruleKkpMissingMembers, _ruleKkpMissingTypes,
+                _ruleVrUnusedTypes);
 
         private static readonly HashSet<string> _asMissingMembers = LoadResource(Resources.asMissingMembers);
         private static readonly HashSet<string> _asMissingTypes = LoadResource(Resources.asMissingTypes);
         private static readonly HashSet<string> _kkpMissingMembers = LoadResource(Resources.kkpMissingMembers);
         private static readonly HashSet<string> _kkpMissingTypes = LoadResource(Resources.kkpMissingTypes);
+        private static readonly HashSet<string> _vrUnusedTypes = LoadResource(Resources.vrUnusedTypes);
 
         private static HashSet<string> LoadResource(string missingMembers)
         {
@@ -88,6 +94,8 @@ namespace KoikatuCompatibilityAnalyzer
                 obj.ReportDiagnostic(Diagnostic.Create(_ruleKkpMissingMembers, node.GetLocation(), symbol.Name));
             if (_kkpMissingTypes.Contains(str))
                 obj.ReportDiagnostic(Diagnostic.Create(_ruleKkpMissingTypes, node.GetLocation(), symbol.Name));
+            if (_vrUnusedTypes.Contains(str))
+                obj.ReportDiagnostic(Diagnostic.Create(_ruleVrUnusedTypes, node.GetLocation(), symbol.Name));
         }
 
         private static bool IsInsideNameof(SyntaxNode node)

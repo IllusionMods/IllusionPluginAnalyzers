@@ -180,5 +180,29 @@ namespace KoikatuCompatibilityAnalyzer {
                 return ResourceManager.GetString("kkpMissingTypes", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to HSceneProc
+        ///HandCtrl
+        ///HandCtrl.Ctrl
+        ///HandCtrl.HandAction
+        ///HandCtrl.AibuColliderKind
+        ///HandCtrl.ItemBodyLayer
+        ///HandCtrl.AibuItem
+        ///HandCtrl.AibuIcon
+        ///HandCtrl.ActionLayer
+        ///HandCtrl.PathInfo
+        ///HandCtrl.LayerInfo
+        ///HandCtrl.MotionEnableState
+        ///HandCtrl.ReactionMinMax
+        ///HandCtrl.ReactionParam [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string vrUnusedTypes
+        {
+            get
+            {
+                return ResourceManager.GetString("vrUnusedTypes", resourceCulture);
+            }
+        }
     }
 }
