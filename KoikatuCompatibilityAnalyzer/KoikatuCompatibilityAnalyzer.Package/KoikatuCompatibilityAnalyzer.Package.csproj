@@ -10,7 +10,7 @@
 
   <PropertyGroup>
     <PackageId>KoikatuCompatibilityAnalyzer</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.1</PackageVersion>
     <Authors>IllusionLibs</Authors>
     <RepositoryUrl>https://github.com/IllusionMods/IllusionPluginAnalyzers</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -23,7 +23,7 @@
 
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
 
-    <Version>1.0.1</Version>
+    <Version>1.1</Version>
 
     <Product>KoikatuCompatibilityAnalyzer</Product>
   </PropertyGroup>
