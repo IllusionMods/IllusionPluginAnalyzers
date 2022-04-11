@@ -34,6 +34,8 @@ namespace KoiAssemblyComparer
 
             var asMissingMembers = new List<string>();
             var kkpMissingMembers = new List<string>();
+            var asDifferentConstants = new List<string>();
+            var kkpDifferentConstants = new List<string>();
             var sameAs = new List<string>();
             var sameKkp = new List<string>();
             foreach (var typeDefinition in typesDkn)
@@ -66,6 +68,15 @@ namespace KoiAssemblyComparer
                         asMissingMembers.Add(fullName.Replace("/", ".") + "." + typeDefinitionField.Name);
                     if (membersKkp?.Any(x => x.FullName == name) != true)
                         kkpMissingMembers.Add(fullName.Replace("/", ".") + "." + typeDefinitionField.Name);
+
+                    if (typeDefinitionField is FieldDefinition fieldDef)
+                    {
+                        if (membersAs?.FirstOrDefault(x => x.FullName == name) is FieldDefinition asEnumVal && fieldDef.Constant?.ToString() != asEnumVal.Constant?.ToString())
+                            asDifferentConstants.Add(fullName.Replace("/", ".") + "." + typeDefinitionField.Name);
+
+                        if (membersKkp?.FirstOrDefault(x => x.FullName == name) is FieldDefinition kkpEnumVal && fieldDef.Constant?.ToString() != kkpEnumVal.Constant?.ToString())
+                            kkpDifferentConstants.Add(fullName.Replace("/", ".") + "." + typeDefinitionField.Name);
+                    }
                 }
             }
 
@@ -73,6 +84,8 @@ namespace KoiAssemblyComparer
             File.WriteAllLines(dir + @"kkpMissingTypes.txt", kkpMissingTypes);
             File.WriteAllLines(dir + @"asMissingMembers.txt", asMissingMembers);
             File.WriteAllLines(dir + @"kkpMissingMembers.txt", kkpMissingMembers);
+            File.WriteAllLines(dir + @"asDifferentConstants.txt", asDifferentConstants);
+            File.WriteAllLines(dir + @"kkpDifferentConstants.txt", kkpDifferentConstants);
 
             Console.WriteLine(asMissingMembers.Count);
         }

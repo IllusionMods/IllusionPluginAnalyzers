@@ -33,14 +33,26 @@ namespace KoikatuCompatibilityAnalyzer
             "Type is missing in KK Party.",
             "Type {0} is missing in KK Party.",
             Category, DiagnosticSeverity.Warning, true, Description);
+        
+        private static readonly DiagnosticDescriptor _ruleAsDifferentConstants = new DiagnosticDescriptor("KKANAL05",
+            "Value of this constant is different in games without Darkness.",
+            "Value of {0} is different in games without Darkness. If you compile while referencing this constant, the value from the referenced dll will be burned into your plugin, it will not be read from the game DLL so you might get unexpected behavior on different game installs. WARNING: If the constant is an enum value, its corresponding number will be saved and not the actual enum value, so in different game installs it will end up as a completely different enum value!",
+            Category, DiagnosticSeverity.Warning, true, Description);
+        
+        private static readonly DiagnosticDescriptor _ruleKkpDifferentConstants = new DiagnosticDescriptor("KKANAL06",
+            "Value of this constant is different in KK Party.",
+            "Value of {0} is different in KK Party. If you compile while referencing this constant, the value from the referenced dll will be burned into your plugin, it will not be read from the game DLL so you might get unexpected behavior on different game installs. WARNING: If the constant is an enum value, its corresponding number will be saved and not the actual enum value, so in different game installs it will end up as a completely different enum value!",
+            Category, DiagnosticSeverity.Warning, true, Description);
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
-            ImmutableArray.Create(_ruleAsMissingMembers, _ruleAsMissingTypes, _ruleKkpMissingMembers, _ruleKkpMissingTypes);
+            ImmutableArray.Create(_ruleAsMissingMembers, _ruleAsMissingTypes, _ruleKkpMissingMembers, _ruleKkpMissingTypes, _ruleAsDifferentConstants, _ruleKkpDifferentConstants);
 
         private static readonly HashSet<string> _asMissingMembers = LoadResource(Resources.asMissingMembers);
         private static readonly HashSet<string> _asMissingTypes = LoadResource(Resources.asMissingTypes);
         private static readonly HashSet<string> _kkpMissingMembers = LoadResource(Resources.kkpMissingMembers);
         private static readonly HashSet<string> _kkpMissingTypes = LoadResource(Resources.kkpMissingTypes);
+        private static readonly HashSet<string> _asDifferentConstants = LoadResource(Resources.asDifferentConstants);
+        private static readonly HashSet<string> _kkpDifferentConstants = LoadResource(Resources.kkpDifferentConstants);
 
         private static HashSet<string> LoadResource(string missingMembers)
         {
@@ -88,6 +100,11 @@ namespace KoikatuCompatibilityAnalyzer
                 obj.ReportDiagnostic(Diagnostic.Create(_ruleKkpMissingMembers, node.GetLocation(), symbol.Name));
             if (_kkpMissingTypes.Contains(str))
                 obj.ReportDiagnostic(Diagnostic.Create(_ruleKkpMissingTypes, node.GetLocation(), symbol.Name));
+
+            if (_asDifferentConstants.Contains(str))
+                obj.ReportDiagnostic(Diagnostic.Create(_ruleAsDifferentConstants, node.GetLocation(), symbol.Name));
+            if (_kkpDifferentConstants.Contains(str))
+                obj.ReportDiagnostic(Diagnostic.Create(_ruleKkpDifferentConstants, node.GetLocation(), symbol.Name));
         }
 
         private static bool IsInsideNameof(SyntaxNode node)

@@ -130,11 +130,17 @@
     <comment>The title of the diagnostic.</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="asDifferentConstants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\asDifferentConstants.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="asMissingMembers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\asMissingMembers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="asMissingTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\asMissingTypes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="kkpDifferentConstants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\kkpDifferentConstants.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="kkpMissingMembers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\kkpMissingMembers.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>

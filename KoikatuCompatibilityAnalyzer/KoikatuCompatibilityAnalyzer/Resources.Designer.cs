@@ -88,6 +88,29 @@ namespace KoikatuCompatibilityAnalyzer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ChaReference.RefObjKey.S_ANA
+        ///ChaReference.RefObjKey.S_TongueF
+        ///ChaReference.RefObjKey.S_TongueB
+        ///ChaReference.RefObjKey.S_Son
+        ///ChaReference.RefObjKey.S_SimpleTop
+        ///ChaReference.RefObjKey.S_SimpleBody
+        ///ChaReference.RefObjKey.S_SimpleTongue
+        ///ChaReference.RefObjKey.S_MNPA
+        ///ChaReference.RefObjKey.S_MNPB
+        ///ChaReference.RefObjKey.S_MOZ_ALL
+        ///ChaReference.RefObjKey.S_GOMU
+        ///ChaReference.RefObjKey.S_CTOP_T_DEF
+        ///ChaReference.RefObjKey.S_CTOP_T_NUGE
+        ///ChaReference.RefObjKey.S_CTOP_B_DEF
+        ///ChaReference.RefObjKey.S_CTOP_B_N [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string asDifferentConstants {
+            get {
+                return ResourceManager.GetString("asDifferentConstants", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ActionGame.H.OpenHData.Data.isDarkness
         ///ActionGame.Point.ActionPoint.executable
         ///ActionGame.Point.ActionPoint.EventADVStart
@@ -131,6 +154,29 @@ namespace KoikatuCompatibilityAnalyzer {
         internal static string asMissingTypes {
             get {
                 return ResourceManager.GetString("asMissingTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ChaReference.RefObjKey.S_ANA
+        ///ChaReference.RefObjKey.S_TongueF
+        ///ChaReference.RefObjKey.S_TongueB
+        ///ChaReference.RefObjKey.S_Son
+        ///ChaReference.RefObjKey.S_SimpleTop
+        ///ChaReference.RefObjKey.S_SimpleBody
+        ///ChaReference.RefObjKey.S_SimpleTongue
+        ///ChaReference.RefObjKey.S_MNPA
+        ///ChaReference.RefObjKey.S_MNPB
+        ///ChaReference.RefObjKey.S_MOZ_ALL
+        ///ChaReference.RefObjKey.S_GOMU
+        ///ChaReference.RefObjKey.S_CTOP_T_DEF
+        ///ChaReference.RefObjKey.S_CTOP_T_NUGE
+        ///ChaReference.RefObjKey.S_CTOP_B_DEF
+        ///ChaReference.RefObjKey.S_CTOP_B_N [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string kkpDifferentConstants {
+            get {
+                return ResourceManager.GetString("kkpDifferentConstants", resourceCulture);
             }
         }
         
