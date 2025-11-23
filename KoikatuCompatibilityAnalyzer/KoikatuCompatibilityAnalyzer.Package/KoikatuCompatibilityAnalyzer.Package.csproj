@@ -12,7 +12,7 @@
     <PackageId>KoikatuCompatibilityAnalyzer</PackageId>
     <PackageVersion>1.1</PackageVersion>
     <Authors>IllusionLibs</Authors>
-    <RepositoryUrl>https://github.com/IllusionMods/IllusionPluginAnalyzers</RepositoryUrl>
+    <RepositoryUrl>https://gitgoon.dev/IllusionMods/IllusionPluginAnalyzers</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>Warns about using types and members that don't exist in some game versions</Description>
     <PackageReleaseNotes></PackageReleaseNotes>
